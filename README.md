@@ -1,2 +1,3 @@
-# MVC-MVP-VIPER-MVVM
-Super Simple Example
+# Architecture patterns: MVC / MVP / VIPER / MVVM
+
+This is simple code example.
