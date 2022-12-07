@@ -16,6 +16,10 @@
 		0A2E81EB292D29E300BA0C4C /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E81EA292D29E300BA0C4C /* MVCViewController.swift */; };
 		0A2E81ED292D29FC00BA0C4C /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E81EC292D29FC00BA0C4C /* MVCModel.swift */; };
 		0A2E81EF292D2A2000BA0C4C /* MVCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E81EE292D2A2000BA0C4C /* MVCView.swift */; };
+		0ACAE6E32940F96A009D768D /* MVPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAE6E22940F96A009D768D /* MVPView.swift */; };
+		0ACAE6E52940F9DA009D768D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAE6E42940F9DA009D768D /* Presenter.swift */; };
+		0ACAE6E72940FB9E009D768D /* MVPRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAE6E62940FB9E009D768D /* MVPRootView.swift */; };
+		0ACAE6E92940FD18009D768D /* MVPModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAE6E82940FD18009D768D /* MVPModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		0A2E81EA292D29E300BA0C4C /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
 		0A2E81EC292D29FC00BA0C4C /* MVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
 		0A2E81EE292D2A2000BA0C4C /* MVCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCView.swift; sourceTree = "<group>"; };
+		0ACAE6E22940F96A009D768D /* MVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPView.swift; sourceTree = "<group>"; };
+		0ACAE6E42940F9DA009D768D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		0ACAE6E62940FB9E009D768D /* MVPRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPRootView.swift; sourceTree = "<group>"; };
+		0ACAE6E82940FD18009D768D /* MVPModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 				0A2E81D5292D265C00BA0C4C /* AppDelegate.swift */,
 				0A2E81D7292D265C00BA0C4C /* SceneDelegate.swift */,
 				0A2E81D9292D265C00BA0C4C /* ViewController.swift */,
+				0ACAE6E02940F93C009D768D /* MVP */,
 				0A2E81E9292D29C100BA0C4C /* MVC */,
 				0A2E81DB292D265C00BA0C4C /* Main.storyboard */,
 				0A2E81DE292D265D00BA0C4C /* Assets.xcassets */,
@@ -82,6 +91,25 @@
 				0A2E81EA292D29E300BA0C4C /* MVCViewController.swift */,
 			);
 			path = MVC;
+			sourceTree = "<group>";
+		};
+		0ACAE6E02940F93C009D768D /* MVP */ = {
+			isa = PBXGroup;
+			children = (
+				0ACAE6E12940F951009D768D /* View */,
+				0ACAE6E42940F9DA009D768D /* Presenter.swift */,
+				0ACAE6E82940FD18009D768D /* MVPModel.swift */,
+			);
+			path = MVP;
+			sourceTree = "<group>";
+		};
+		0ACAE6E12940F951009D768D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ACAE6E22940F96A009D768D /* MVPView.swift */,
+				0ACAE6E62940FB9E009D768D /* MVPRootView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,9 +185,13 @@
 			files = (
 				0A2E81DA292D265C00BA0C4C /* ViewController.swift in Sources */,
 				0A2E81ED292D29FC00BA0C4C /* MVCModel.swift in Sources */,
+				0ACAE6E52940F9DA009D768D /* Presenter.swift in Sources */,
 				0A2E81D6292D265C00BA0C4C /* AppDelegate.swift in Sources */,
+				0ACAE6E72940FB9E009D768D /* MVPRootView.swift in Sources */,
 				0A2E81EF292D2A2000BA0C4C /* MVCView.swift in Sources */,
 				0A2E81D8292D265C00BA0C4C /* SceneDelegate.swift in Sources */,
+				0ACAE6E92940FD18009D768D /* MVPModel.swift in Sources */,
+				0ACAE6E32940F96A009D768D /* MVPView.swift in Sources */,
 				0A2E81EB292D29E300BA0C4C /* MVCViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
