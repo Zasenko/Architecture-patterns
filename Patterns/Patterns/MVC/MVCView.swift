@@ -8,13 +8,33 @@
 import UIKit
 
 class MVCView: UIView {
+    
+    let textField = UITextField()
+    let button = UIButton()
+    let lable = UILabel()
+    
+    //MARK: - init's
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    init() {
+        super.init(frame: CGRect())
+        createView()
     }
-    */
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: - create Views
+    
+    func createView() {
+        addSubview(textField)
+        addSubview(button)
+        addSubview(lable)
+    }
+    
+    //MARK: - Constraints
 
+    override func layoutSubviews() {
+        super.layoutSubviews()
+    }
 }

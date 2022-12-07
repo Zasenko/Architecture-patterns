@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+protocol MVCModelProtocol {
+    func hash(_ string: String) -> String
+}
+
+struct MVCModel: MVCModelProtocol {
+    func hash(_ string: String) -> String {
+        return string.hashValue.description
+    }
+}
