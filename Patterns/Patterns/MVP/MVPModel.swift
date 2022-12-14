@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct MVPModel {}
 
 extension MVPModel: PresenterModel {
@@ -16,5 +15,4 @@ extension MVPModel: PresenterModel {
     func getHast(_ string: String) -> String {
         return string.hashValue.description
     }
-
 }

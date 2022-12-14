@@ -7,10 +7,12 @@
 
 import Foundation
 
+/// протоко, который будет реализовывать view
 protocol PresenterRootView {
     func showHash(_ string: String)
 }
 
+/// протокол, который будет реализовывать model
 protocol PresenterModel {
     func getHast(_ string: String) -> String
 }

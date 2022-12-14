@@ -16,6 +16,10 @@
 		0A2E81EB292D29E300BA0C4C /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E81EA292D29E300BA0C4C /* MVCViewController.swift */; };
 		0A2E81ED292D29FC00BA0C4C /* MVCModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E81EC292D29FC00BA0C4C /* MVCModel.swift */; };
 		0A2E81EF292D2A2000BA0C4C /* MVCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2E81EE292D2A2000BA0C4C /* MVCView.swift */; };
+		0A67A754294A57E600267DC6 /* MVVMModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67A74E294A57E600267DC6 /* MVVMModel.swift */; };
+		0A67A755294A57E600267DC6 /* MVVMView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67A750294A57E600267DC6 /* MVVMView.swift */; };
+		0A67A756294A57E600267DC6 /* MVVMRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67A751294A57E600267DC6 /* MVVMRootView.swift */; };
+		0A67A757294A57E600267DC6 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A67A753294A57E600267DC6 /* ViewModel.swift */; };
 		0ACAE6E32940F96A009D768D /* MVPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAE6E22940F96A009D768D /* MVPView.swift */; };
 		0ACAE6E52940F9DA009D768D /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAE6E42940F9DA009D768D /* Presenter.swift */; };
 		0ACAE6E72940FB9E009D768D /* MVPRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACAE6E62940FB9E009D768D /* MVPRootView.swift */; };
@@ -34,6 +38,10 @@
 		0A2E81EA292D29E300BA0C4C /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
 		0A2E81EC292D29FC00BA0C4C /* MVCModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCModel.swift; sourceTree = "<group>"; };
 		0A2E81EE292D2A2000BA0C4C /* MVCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCView.swift; sourceTree = "<group>"; };
+		0A67A74E294A57E600267DC6 /* MVVMModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMModel.swift; sourceTree = "<group>"; };
+		0A67A750294A57E600267DC6 /* MVVMView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMView.swift; sourceTree = "<group>"; };
+		0A67A751294A57E600267DC6 /* MVVMRootView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MVVMRootView.swift; sourceTree = "<group>"; };
+		0A67A753294A57E600267DC6 /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 		0ACAE6E22940F96A009D768D /* MVPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPView.swift; sourceTree = "<group>"; };
 		0ACAE6E42940F9DA009D768D /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
 		0ACAE6E62940FB9E009D768D /* MVPRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPRootView.swift; sourceTree = "<group>"; };
@@ -73,6 +81,7 @@
 				0A2E81D5292D265C00BA0C4C /* AppDelegate.swift */,
 				0A2E81D7292D265C00BA0C4C /* SceneDelegate.swift */,
 				0A2E81D9292D265C00BA0C4C /* ViewController.swift */,
+				0A67A74C294A57D100267DC6 /* MVVM */,
 				0ACAE6E02940F93C009D768D /* MVP */,
 				0A2E81E9292D29C100BA0C4C /* MVC */,
 				0A2E81DB292D265C00BA0C4C /* Main.storyboard */,
@@ -93,12 +102,47 @@
 			path = MVC;
 			sourceTree = "<group>";
 		};
+		0A67A74C294A57D100267DC6 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				0A67A74D294A57E600267DC6 /* Model */,
+				0A67A752294A57E600267DC6 /* ViewModel */,
+				0A67A74F294A57E600267DC6 /* View */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		0A67A74D294A57E600267DC6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0A67A74E294A57E600267DC6 /* MVVMModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0A67A74F294A57E600267DC6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0A67A750294A57E600267DC6 /* MVVMView.swift */,
+				0A67A751294A57E600267DC6 /* MVVMRootView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0A67A752294A57E600267DC6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0A67A753294A57E600267DC6 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		0ACAE6E02940F93C009D768D /* MVP */ = {
 			isa = PBXGroup;
 			children = (
-				0ACAE6E12940F951009D768D /* View */,
-				0ACAE6E42940F9DA009D768D /* Presenter.swift */,
 				0ACAE6E82940FD18009D768D /* MVPModel.swift */,
+				0ACAE6E42940F9DA009D768D /* Presenter.swift */,
+				0ACAE6E12940F951009D768D /* View */,
 			);
 			path = MVP;
 			sourceTree = "<group>";
@@ -185,10 +229,14 @@
 			files = (
 				0A2E81DA292D265C00BA0C4C /* ViewController.swift in Sources */,
 				0A2E81ED292D29FC00BA0C4C /* MVCModel.swift in Sources */,
+				0A67A756294A57E600267DC6 /* MVVMRootView.swift in Sources */,
 				0ACAE6E52940F9DA009D768D /* Presenter.swift in Sources */,
 				0A2E81D6292D265C00BA0C4C /* AppDelegate.swift in Sources */,
 				0ACAE6E72940FB9E009D768D /* MVPRootView.swift in Sources */,
+				0A67A757294A57E600267DC6 /* ViewModel.swift in Sources */,
 				0A2E81EF292D2A2000BA0C4C /* MVCView.swift in Sources */,
+				0A67A755294A57E600267DC6 /* MVVMView.swift in Sources */,
+				0A67A754294A57E600267DC6 /* MVVMModel.swift in Sources */,
 				0A2E81D8292D265C00BA0C4C /* SceneDelegate.swift in Sources */,
 				0ACAE6E92940FD18009D768D /* MVPModel.swift in Sources */,
 				0ACAE6E32940F96A009D768D /* MVPView.swift in Sources */,

@@ -7,7 +7,7 @@
 
 import UIKit
 
-//то, что доложен реализовать презентер данного вью
+///протокол, который доложен реализовать презентер данного вью
 protocol MVPPresenterProtocol {
     func getHash(_ string: String)
 }
@@ -49,6 +49,4 @@ extension MVPView: PresenterRootView {
     func showHash(_ string: String) {
         rootView.lable.text = string
     }
-    
-    
 }
